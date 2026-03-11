@@ -31,7 +31,7 @@ const CrashDashboard = () => {
 
   // Load GeoJSON data
   useEffect(() => {
-    const filePath = './output_2026-02-15.geojson';
+    const filePath = './output_fully_combined_2026-03-11.geojson';
     
     fetch(filePath)
       .then(res => res.json())
@@ -428,7 +428,7 @@ const CrashDashboard = () => {
                 ტრანსპორტის მოძრაობის უსაფრთხოების ან ექპლუატაციის წესის დარღვევა.</p>
 
               <h3 style={{ fontFamily: '"BPG Nino Elite Caps", sans-serif', color: '#542788', fontSize: '1.2rem' }}>მონაცემთა წყარო</h3>
-              <p style={{ fontFamily: '"ALK Rounded Nusx Med", sans-serif', }}>მონაცემები შეგროვებულია maps.police.ge პლატფორმიდან. მონაცემთა ანალიზი, დახარისხება და გადმოსაწერად მომზადება ხდება [თითქმის] ყოველკვირეულად.
+              <p style={{ fontFamily: '"ALK Rounded Nusx Med", sans-serif', }}>მონაცემები შეგროვებულია maps.police.ge პლატფორმიდან. მონაცემთა ანალიზი, დახარისხება და გადმოსაწერად მომზადება ხდება [თითქმის] ყოველკვირეულად .
                 ბოლო განახლების თარიღი მითითებულია ქვემოთ.
               </p>
               
@@ -909,7 +909,7 @@ const CrashDashboard = () => {
           <button 
             onClick={() => {
               const link = document.createElement('a');
-              link.href = './output_2026-02-15.geojson';
+              link.href = './output_fully_combined_2026-03-11.geojson';
               link.download = 'crash-data.geojson';
               link.click();
             }}
