@@ -865,12 +865,7 @@ const CrashDashboard = () => {
         }}>
           <span style={{ color: '#888' }}>ბოლო განახლება: </span>
           <b><span style={{ color: '#000' }}>
-            {data.length > 0 && (() => {
-              const georgianMonths = ['იან', 'თებ', 'მარ', 'აპრ', 'მაი', 'ივნ', 
-                                      'ივლ', 'აგვ', 'სექ', 'ოქტ', 'ნოე', 'დეკ'];
-              const date = new Date(data[data.length - 1].timestamp);
-              return `${date.getDate()} ${georgianMonths[date.getMonth()]} ${date.getFullYear()}`;
-            })()}
+          11 მარ 2026
           </span></b>
         </div>
 
